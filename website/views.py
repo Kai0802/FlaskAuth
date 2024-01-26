@@ -10,4 +10,4 @@ views = Blueprint('views', __name__)
 @views.route('/')
 def home():
     # the point of this function is that this function will run everytime this url is entered
-    return render_template("home.jinja")
+    return render_template("home.html.j2")

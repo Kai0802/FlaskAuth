@@ -1,0 +1,17 @@
+{% extends "base.html.j2" %}
+{% block title %}
+    Sign Up
+{% endblock title %}
+{% block content %}
+    <form method="post">
+        <h3 align="center"></h3>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email"
+                   class="form-control"
+                   id="email"
+                   name="email"
+                   placeholder="enter email">
+        </div>
+    </form>
+{% endblock content %}
