@@ -1,12 +1,34 @@
 {% extends "base.html.j2" %}
 {% block title %}
-    Login
+    Sign Up
 {% endblock title %}
 {% block content %}
-    <h1>Login Form</h1>
-    {% if boolean == False %}
-        Yes it is true!
-    {% else %}
-        No it is not true
-    {% endif %}
+    <div class="container">
+        <div class="mt-5 row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <form method="post" class="card-body">
+                        <h3 class="card-title text-center">Login</h3>
+                        <div class="form-group mb-3">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email"
+                                   class="form-control"
+                                   id="email"
+                                   name="email"
+                                   placeholder="enter email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="form-label" for="password1">Password</label>
+                            <input type="password"
+                                   class="form-control"
+                                   id="password"
+                                   name="password"
+                                   placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
