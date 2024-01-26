@@ -5,7 +5,9 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login')
 def login():
-    return render_template("login.jinja", text="Test")
+    # the text and user are two variables that being passed from backend
+    # to front end
+    return render_template("login.jinja", boolean=True)
 
 
 @auth.route('/logout')
